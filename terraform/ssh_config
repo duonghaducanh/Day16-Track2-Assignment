@@ -1,0 +1,15 @@
+Host *
+    StrictHostKeyChecking accept-new
+
+Host lab-bastion
+    HostName 44.222.78.187
+    User ubuntu
+    IdentityFile ./lab-key
+    IdentitiesOnly yes
+
+Host lab-cpu
+    HostName 10.0.10.157
+    User ubuntu
+    IdentityFile ./lab-key
+    IdentitiesOnly yes
+    ProxyJump lab-bastion

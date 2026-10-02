@@ -1,0 +1,38 @@
+=== TOP (batch, trong luc benchmark) ===
+top - 13:57:13 up  1:14,  0 users,  load average: 0.18, 0.07, 0.04
+Tasks: 109 total,   2 running, 107 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 97.0 us,  3.0 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3836.7 total,   1403.2 free,    652.7 used,   1780.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2909.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4423 ubuntu    20   0  853500 502584  62896 R 193.8  12.8   0:04.73 python3
+      1 root      20   0  101976  13012   8460 S   0.0   0.3   0:02.27 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+=== FREE -h ===
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       651Mi       1.4Gi       2.0Mi       1.7Gi       2.8Gi
+Swap:             0B          0B          0B
+
+=== IP -s LINK ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    RX:  bytes packets errors dropped  missed   mcast           
+         35449     304      0       0       0       0 
+    TX:  bytes packets errors dropped carrier collsns           
+         35449     304      0       0       0       0 
+2: ens5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 02:ff:f0:13:08:59 brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+     279910969  193505      0       0       0       0 
+    TX:  bytes packets errors dropped carrier collsns           
+       1075759   11739      0       0       0       0 
+    altname enp0s5
+
+=== benchmark tail ===
+}
+
+Saved results to /home/ubuntu/ml-benchmark/benchmark_result.json
