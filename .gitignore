@@ -34,3 +34,6 @@ apply.out
 # Python cache
 __pycache__/
 *.pyc
+
+# Claude Code local settings (may chua thong tin may cuc bo)
+.claude/settings.local.json
